@@ -47,11 +47,19 @@
 
 
 ##  Documentation
-Include your travis badge at the top of your `README.md` file
+The module.exports on the server.js file exports the server that we created on this page and allows us to use it on the testing page. It also sets a port.  
 
+#### homePage():
+Airty: 2
+Expected Data: It takes in a request and a response and is used as the callback function in a get request
+Behavior: If it behaves correctly, it will render the home page with the data we pass through it.
 
+#### categoryPage():
+Airty: 2
+Expected Data: It takes in a request and a response and is used as the callback function in a get request
+Behavior: If it behaves correctly, it will render the category page with the data we pass through it. If it doesn't behave correctly, it will throw an error. 
 
-
-
-In your `README.md`, describe the exported values of each module you have defined. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and it's behavior (for both valid and invalid use). Feel free to add any additional information in your `README.md` that you would like.
-
+#### productsPage():
+Airty: 2
+Expected Data: It takes in a request and a response and is used as the callback function in a get request
+Behavior: If it behaves correctly, it will render the products page with the data we pass through it. If it doesn't behave correctly, it will throw an error.

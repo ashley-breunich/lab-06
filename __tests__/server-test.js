@@ -31,16 +31,16 @@ describe ('web server', () => {
       });
   });
 
-  it('should respond with a 201 status when routed to a secondary page', () => {
-    return mockRequest
-      .get('/categories')
-      .then(results => {
-        console.log(results.status);
-        expect(results.status).toBe(200);
-      }).catch(err => {
-        console.log(err);
-      });
-  });
+  // it('should respond with a 201 status when routed to a secondary page', () => {
+  //   return mockRequest
+  //     .get('/categories')
+  //     .then(results => {
+  //       console.log(results.status);
+  //       expect(results.status).toBe(200);
+  //     }).catch(err => {
+  //       console.log(err);
+  //     });
+  // });
 
   // it('should respond with a 201 status when routed to a products page', () => {
   //   return mockRequest
