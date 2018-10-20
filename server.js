@@ -43,7 +43,12 @@ function productsPage(request,response) {
   
 }
 
-app.listen(PORT, () => console.log(`Server up on ${PORT}`));
+app.start = (port = PORT) => app.listen(port, () => console.log(`Server up on ${port}`));
+app.stop = callback => {
+  try {console.log('trying to stop');
+    app.close(callback);}
+  catch (err) {console.error(err);}
+};
 
 module.exports = {
   server: app,
