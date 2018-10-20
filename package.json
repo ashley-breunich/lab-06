@@ -1,0 +1,24 @@
+{
+  "name": "lab-06",
+  "version": "1.0.0",
+  "description": "![CF](http://i.imgur.com/7v5ASc8.png) LAB: HTTP and REST ========================================================",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashley-breunich/lab-06.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashley-breunich/lab-06/issues"
+  },
+  "homepage": "https://github.com/ashley-breunich/lab-06#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "superagent": "^4.0.0-beta.5"
+  }
+}

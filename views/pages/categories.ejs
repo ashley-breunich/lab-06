@@ -1,0 +1,6 @@
+<h2>Search by Category</h2>
+<ul>
+    <% categories.forEach( category => { %>
+        <a href="/categories/<%= category.name %>"><li><%= category.display_name %></li></a>
+    <% }) %>
+</ul>
