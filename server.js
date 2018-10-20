@@ -19,28 +19,32 @@ app.get('/categories/:name', productsPage);
 
 
 function homePage(request,response) {
-    response.render('site', {page:'./pages/index', title:'Our Site: Home'});
-  }
+  response.render('site', {page:'./pages/index', title:'Our Site: Home'});
+}
   
 
-  function categoryPage(request,response) {
-    superagent.get(`${API}/categories`)
-      .then( data => {
-        response.render('site', {categories:data.body, page:'./pages/categories', title:'Our Site: Categories'});
+function categoryPage(request,response) {
+  superagent.get(`${API}/categories`)
+    .then( data => {
+      response.render('site', {categories:data.body, page:'./pages/categories', title:'Our Site: Categories'});
   
-      })
-      .catch( error => console.error(error) );
+    })
+    .catch( error => console.error(error) );
   
-  }
+}
 
-  function productsPage(request,response) {
-    superagent.get(`${API}/products?category=${request.params.name}`)
-      .then( data => {
-        response.render('site', {products:data.body, page:'./pages/products', title:'Our Site: Products'});
+function productsPage(request,response) {
+  superagent.get(`${API}/products?category=${request.params.name}`)
+    .then( data => {
+      response.render('site', {products:data.body, page:'./pages/products', title:'Our Site: Products'});
   
-      })
-      .catch( error => console.error(error) );
+    })
+    .catch( error => console.error(error) );
   
-  }
+}
 
 app.listen(PORT, () => console.log(`Server up on ${PORT}`));
+
+module.exports = {
+  server: app,
+};
