@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "jest --coverage --verbose",
-    "test-watch": "jest --verbose --coverage --watchAll"
+    "test-watch": "jest --verbose --coverage --watchAll",
+    "start" : "start" 
   },
   "repository": {
     "type": "git",
