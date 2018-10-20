@@ -31,23 +31,23 @@ describe ('web server', () => {
       });
   });
 
-  it('should respond with a 201 status when routed to categories', () => {
-    return mockRequest
-      .get('/categories')
-      .then(results => {
-        expect(results.status).toBe(200);
-      }).catch(err => {
-        console.log(err);
-      });
-  });
+  // it('should respond with a 201 status when routed to categories', () => {
+  //   return mockRequest
+  //     .get('/categories')
+  //     .then(results => {
+  //       expect(results.status).toBe(200);
+  //     }).catch(err => {
+  //       console.log(err);
+  //     });
+  // });
 
-  it('should respond with a 201 status when routed to a products page', () => {
-    return mockRequest
-      .get('/categories/boots')
-      .then(results => {
-        expect(results.status).toBe(200);
-      }).catch(err => {
-        console.log(err);
-      });
-  });
+  // it('should respond with a 201 status when routed to a products page', () => {
+  //   return mockRequest
+  //     .get('/categories/boots')
+  //     .then(results => {
+  //       expect(results.status).toBe(200);
+  //     }).catch(err => {
+  //       console.log(err);
+  //     });
+  // });
 });
