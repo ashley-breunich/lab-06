@@ -1,3 +1,5 @@
+[![Build Status](https://www.travis-ci.com/ashley-breunich/lab-06.svg?branch=master)](https://www.travis-ci.com/ashley-breunich/lab-06)
+
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB: HTTP and REST
 ========================================================
 

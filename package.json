@@ -4,7 +4,6 @@
   "description": "![CF](http://i.imgur.com/7v5ASc8.png) LAB: HTTP and REST ========================================================",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
     "test": "jest --coverage --verbose",
     "test-watch": "jest --verbose --coverage --watchAll"
   },

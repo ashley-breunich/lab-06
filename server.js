@@ -5,7 +5,7 @@ const express = require('express');
 
 const app = express();
 
-const PORT = 8080;
+// const PORT = 8080;
 const API = process.env.API_URL || 'http://localhost:3000';
 
 // Set up EJS as our template agent 
@@ -43,14 +43,11 @@ function productsPage(request,response) {
   
 }
 
-app.start = (port = PORT) => app.listen(port, () => console.log(`Server up on ${port}`));
-app.stop = callback => {
-  try {console.log('trying to stop');
-    app.close(callback);}
-  catch (err) {console.error(err);}
-};
-
 module.exports = {
   server: app,
+  start: port => {
+    let PORT = port || process.env.PORT || 8080;
+    app.listen(PORT, () => console.log(`Listening on ${PORT}`));
+  },
 };
 
