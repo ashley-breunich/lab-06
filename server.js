@@ -5,7 +5,7 @@ const express = require('express');
 
 const app = express();
 
-// const PORT = 8080;
+const PORT = 8080;
 const API = process.env.API_URL || 'http://localhost:3000';
 
 // Set up EJS as our template agent 
@@ -42,6 +42,8 @@ function productsPage(request,response) {
     .catch( error => console.error(error) );
   
 }
+
+app.listen(PORT, () => console.log(`Listening on ${PORT}`));
 
 module.exports = {
   server: app,

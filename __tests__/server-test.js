@@ -3,11 +3,8 @@
 const {server} = require('../server.js');
 const supertest = require('supertest');
 const mockRequest = supertest(server);
-// console.log(server);
 
 describe ('web server', () => {
-  // beforeAll(() => server.start(8080));
-  // afterAll(() => server.stop(() => console.log('Server Stopped.')));
 
   it('should respond with a 404 on an invalid route', () => {
     return mockRequest
